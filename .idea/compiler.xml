@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="itheima_spring_ioc" target="1.5" />
+      <module name="itheima_spring_ioc" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

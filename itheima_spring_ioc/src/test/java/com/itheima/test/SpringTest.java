@@ -13,8 +13,8 @@ public class SpringTest {
         ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserDao userDao1 = (UserDao) app.getBean("userDao");
         UserDao userDao2 = (UserDao) app.getBean("userDao");
-        userDao1.save();
-        userDao2.save();
+//        userDao1.save();
+//        userDao2.save();
         System.out.println(userDao1);
         System.out.println(userDao2);
     }
