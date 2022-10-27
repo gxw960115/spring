@@ -12,6 +12,7 @@ public class MyInterceptor1 implements HandlerInterceptor {
     //在目标方法执行之前 执行
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws ServletException, IOException {
         System.out.println("preHandle.....");
+//        return true;
         String param = request.getParameter("param");
         if("yes".equals(param)){
             return true;
@@ -23,7 +24,7 @@ public class MyInterceptor1 implements HandlerInterceptor {
 
     //在目标方法执行之后 视图对象返回之前执行
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) {
-        modelAndView.addObject("name","itheima");
+        modelAndView.addObject("name", "itheima");
         System.out.println("postHandle...");
     }
 

@@ -10,7 +10,6 @@ import java.util.List;
 public class RoleDaoImpl implements RoleDao {
 
     private JdbcTemplate jdbcTemplate;
-
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
@@ -21,7 +20,7 @@ public class RoleDaoImpl implements RoleDao {
     }
 
     public void save(Role role) {
-        jdbcTemplate.update("insert into sys_role values(?,?,?)", null, role.getRoleName(), role.getRoleDesc());
+        jdbcTemplate.update("insert into sys_role values(?,?,?)",null,role.getRoleName(),role.getRoleDesc());
     }
 
     public List<Role> findRoleByUserId(Long id) {
