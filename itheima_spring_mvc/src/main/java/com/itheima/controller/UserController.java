@@ -206,6 +206,4 @@ public class UserController {
         System.out.println(name + " , " + uploadFile2.getName());
         return "名字为：" + name + "的" + uploadFile.getOriginalFilename() + "上传成功" + "名字为：" + name + "的" + uploadFile2.getName() + "上传成功";
     }
-
-
 }
