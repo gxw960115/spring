@@ -14,9 +14,9 @@ public class PrivilegeInterceptor implements HandlerInterceptor {
         //逻辑：判断用户是否登录  本质：判断session中有没有user
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-        if(user==null){
+        if (user == null) {
             //没有登录
-            response.sendRedirect(request.getContextPath()+"/login.jsp");
+            response.sendRedirect(request.getContextPath() + "/login.jsp");
             return false;
         }
 
