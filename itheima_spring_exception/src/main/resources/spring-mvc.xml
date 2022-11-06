@@ -24,6 +24,18 @@
     <!--4、组件扫描  扫描Controller-->
     <context:component-scan base-package="com.itheima.controller"/>
 
+    <!--配置简单映射异常处理器-->
+<!--    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+<!--        &lt;!&ndash;        <property name="defaultErrorView" value="error"/>&ndash;&gt;-->
+<!--        <property name="exceptionMappings">-->
+<!--            <map>-->
+<!--                <entry key="java.lang.ClassCastException" value="error1"/>-->
+<!--                <entry key="com.itheima.exception.MyException" value="error2"/>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--    </bean>-->
 
 
+    <!--自定义异常处理器-->
+    <bean class="com.itheima.resolver.MyExceptionResolver"></bean>
 </beans>

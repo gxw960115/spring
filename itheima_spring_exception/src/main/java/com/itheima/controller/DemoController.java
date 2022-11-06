@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.FileNotFoundException;
 
+/**
+ * @author gxw
+ */
 @Controller
 public class DemoController {
 
@@ -17,10 +20,10 @@ public class DemoController {
     @RequestMapping(value = "/show")
     public String show() throws FileNotFoundException, MyException {
         System.out.println("show running......");
-        //demoService.show1();
-        //demoService.show2();
-        //demoService.show3();
-        //demoService.show4();
+//        demoService.show1();
+//        demoService.show2();
+//        demoService.show3();
+//        demoService.show4();
         demoService.show5();
         return "index";
     }
